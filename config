@@ -206,7 +206,23 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
         tray_output primary
+            colors {
+        background #000000
+        statusline #ffffff
+
+        focused_workspace  #ffffff #285577
+        active_workspace   #ffffff #333333
+        inactive_workspace #888888 #222222
+        urgent_workspace   #ffffff #900000
+    }
 }
+
+
+# bar {
+#    font pango:Hack 14px 
+# 	status_command bumblebee-status/bumblebee-status -m cpu memory date time \
+# 		pasink pasource -p time.format="%H:%M" -t moonlight-powerline 
+#  }
 
 # ------------------------------------------
 # CUSTOM KEYS START
